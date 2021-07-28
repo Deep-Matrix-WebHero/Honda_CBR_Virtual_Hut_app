@@ -5,8 +5,241 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> honda-cbr-bootstrap-assignment</title>
+    <!---------------------
+        bootstrap css link 
+        ----------------------->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <!----------------- 
+            custom-css link 
+        ---------------------->
+        <link rel="stylesheet" href="custom-css/style.css">
 </head>
 <body>
-    <h1>this is honda-cbr-bootstrap-assignment.</h1>
+    <!--------------------
+         header section 
+        ---------------------->
+        <header class="top-banner">
+            <!-- <h1>this is header</h1> -->
+            <section>
+                <nav class="navbar navbar-expand-lg mb-5p">
+                    <div class="container">
+                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                          <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#Shop">Shop</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#News">News</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#Contac">Contac</a>
+                          </li>
+                          <li class="nav-item">
+                            <a class="nav-link" href="#Login"> <button class="btn btn-outline-success btn btn-sm" type="Login">Login</button></a>
+                          </li>
+                          
+                        </ul>
+                       
+                      </div>
+                    </div>
+                  </nav>
+                  <div class="row">
+                    <div class="col my-5 m-lg-5  p-5">
+                        <p class="text-justify text-sm-start">
+                            Computer-controlled digital transistorized with electronic advance
+                        </p>
+                        <h1 >
+                            Honda CBR 300R
+                        </h1>
+                        <p class="text-justify">
+                            Amet minim mollit non deserunt ullamco est sit aliqua 
+                            dolor do amet sint. Velit officia consequat duis enim velit 
+                            mollit. Exercitation veniam consequat sunt nostrud amet.
+                        </p>
+                        <button class="btn btn-warning btn-sm">Purchase</button>
+
+                    </div>
+                    <div class="col my-5 position-relative">
+                        <img src="images/header-bike.png" alt="">
+
+                    </div>
+
+                </div>
+            </section>
+            <!--------------------- 
+                banner section 
+            ----------------------->
+            <section>
+               
+            </section>
+        </header>
+        <!--------------------
+            main section
+         ------------------------>
+         <main>
+            <div class="row py-5 fw-bold">
+                    <div class="text-center">
+                        <h1 >
+                            Fetured Bikes 2021
+                        </h1>
+                        <h5 class=" text-danger text-decoration-underline">
+                            Best bike collection
+                        </h5>
+                </div>
+            </div>
+            <!-- grayscale -->
+            <div>
+                <div class="row d-inline-flex">
+                  <div class="col-1">
+                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
+                  </div>
+                  <div class="col-1">
+                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
+                  </div>
+                  <div class="col-1">
+                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
+                  </div>
+                  
+                  <!-- <div class="col">
+                    <img src="images/feature-bike.jpg" alt="">
+                  </div>
+                  <div class="col-3">
+                    <img src="images/feature-bike.jpg" alt="">
+                  </div> -->
+                </div>
+              </div>
+              <!--------------------------- 
+                  happy clients section
+                 ------------------------------->
+                 <div class="container">
+                     <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="images/bike-1.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="images/bike-2.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col">
+                      <div class="card h-100">
+                        <img src="images/bike-3.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                          <h5 class="card-title">Card title</h5>
+                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                        </div>
+                        <div class="card-footer">
+                          <small class="text-muted">Last updated 3 mins ago</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                 </div>
+                </section>
+                <!-- cccccccccccccc -->
+
+                <div class="container">
+                    <h1>happy clients</h1>
+                    <div class="row row-cols-1 row-cols-md-3 g-4">
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="images/user-1.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="images/user-2.png" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="card h-100">
+                            <img src="images/user-3.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                              <h5 class="card-title">Card title</h5>
+                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                            </div>
+                            <div class="card-footer">
+                              <small class="text-muted">Last updated 3 mins ago</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+
+                </div>
+                <section>
+                    <h1>Frequently Asked <span class="color">Questions</span></h1>
+                    <div>
+                        <img src="images/faq.png" alt="">
+                    </div>
+                    <p>
+                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
+                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
+                      </p>
+                      <div class="row">
+                        <div class="col">
+                          <div class="collapse multi-collapse" id="multiCollapseExample1">
+                            <div class="card card-body">
+                              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                          </div>
+                        </div>
+                        <div class="col">
+                          <div class="collapse multi-collapse" id="multiCollapseExample2">
+                            <div class="card card-body">
+                              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                </section>
+         </main>
+
+         <!--------------------
+             footer section 
+             ------------------------->
+             <footer>
+                 <h1>this is footer</h1>
+             </footer>
+    <!-------------------------- 
+        bootstrap js link
+     ------------------------------>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
