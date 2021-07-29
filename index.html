@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> honda-cbr-bootstrap-assignment</title>
+    <!----------------------
+       google fonts link 
+     ----------------------->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <!---------------------
         bootstrap css link 
         ----------------------->
@@ -13,35 +17,37 @@
             custom-css link 
         ---------------------->
         <link rel="stylesheet" href="custom-css/style.css">
+        <!-- font awesome kit link -->
+        <script src="https://kit.fontawesome.com/9b700a01a8.js" crossorigin="anonymous"></script>
 </head>
 <body>
     <!--------------------
          header section 
         ---------------------->
-        <header class="top-banner">
+        <header class="container top-banner">
             <!-- <h1>this is header</h1> -->
             <section>
                 <nav class="navbar navbar-expand-lg mb-5p">
-                    <div class="container">
+                    <div class="container-fluid">
                       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
                       </button>
                       <div class="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                           <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Home</a>
+                            <a class="nav-link active text-white" aria-current="page" href="#">Home</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#Shop">Shop</a>
+                            <a class="nav-link text-white" href="#Shop">Shop</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#News">News</a>
+                            <a class="nav-link text-white" href="#News">News</a>
                           </li>
                           <li class="nav-item">
-                            <a class="nav-link" href="#Contac">Contac</a>
+                            <a class="nav-link text-white" href="#Contac">Contac</a>
                           </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#Login"> <button class="btn btn-outline-success btn btn-sm" type="Login">Login</button></a>
+                          <li class="nav-item text-white">
+                            <a class="nav-link" href="#Login"> <button class="btn btn-outline-success btn btn-sm text-white" type="Login">Login</button></a>
                           </li>
                           
                         </ul>
@@ -50,11 +56,11 @@
                     </div>
                   </nav>
                   <div class="row">
-                    <div class="col my-5 m-lg-5  p-5">
+                    <div class="col-lg-5 col-12 my-5 m-lg-5 p-5">
                         <p class="text-justify text-sm-start">
                             Computer-controlled digital transistorized with electronic advance
                         </p>
-                        <h1 >
+                        <h1>
                             Honda CBR 300R
                         </h1>
                         <p class="text-justify">
@@ -62,11 +68,11 @@
                             dolor do amet sint. Velit officia consequat duis enim velit 
                             mollit. Exercitation veniam consequat sunt nostrud amet.
                         </p>
-                        <button class="btn btn-warning btn-sm">Purchase</button>
+                        <button class="btn btn-warning btn-lg" id=""><a class="text-white" href="https://bikepricebd.com/honda-cbr-150r/">Purchase</a></button>
 
                     </div>
-                    <div class="col my-5 position-relative">
-                        <img src="images/header-bike.png" alt="">
+                    <div class="col-lg-5 col-12">
+                        <img src="images/header-bike.png" alt="" class="img-fluid" max-width="100%" height="auto">
 
                     </div>
 
@@ -83,160 +89,394 @@
             main section
          ------------------------>
          <main>
-            <div class="row py-5 fw-bold">
-                    <div class="text-center">
-                        <h1 >
-                            Fetured Bikes 2021
-                        </h1>
-                        <h5 class=" text-danger text-decoration-underline">
-                            Best bike collection
-                        </h5>
-                </div>
+
+          <!-- featured bike  -->
+            <section class="container">
+              <div class="d-flex flex-column justify-content-center align-items-center my-5">
+                <!-- <div class="text-center"> -->
+                    <h1 >
+                        Fetured Bikes 2021
+                    </h1>
+                    <small style="color: rgba(231, 111, 81, 1);">
+                      Best bike collection
+                    </small>
+                    <div class="row g-5">
+                      <div class="col-12 col-lg-4">
+                        <img  class="img-fluid feature-bike1" src="images/feature-bike.jpg" alt="" width="100%">
+
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <img  class="img-fluid" src="images/feature-bike.jpg" alt="" width="100%">
+
+                      </div>
+                      <div class="col-12 col-lg-4">
+                        <img  class="img-fluid feature-bike1" src="images/feature-bike.jpg" alt="" width="100%">
+
+                      </div>
+
+                    </div>
+                    <!-- <h5 class=" text-danger text-decoration-underline">
+                        Best bike collection
+                    </h5> -->
             </div>
-            <!-- grayscale -->
-            <div>
-                <div class="row d-inline-flex">
-                  <div class="col-1">
-                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
-                  </div>
-                  <div class="col-1">
-                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
-                  </div>
-                  <div class="col-1">
-                    <img src="images/feature-bike.jpg" alt=""  width="250" height="250">
-                  </div>
-                  
-                  <!-- <div class="col">
-                    <img src="images/feature-bike.jpg" alt="">
-                  </div>
-                  <div class="col-3">
-                    <img src="images/feature-bike.jpg" alt="">
-                  </div> -->
-                </div>
-              </div>
+        </div>
+        <!-- grayscale -->
+        <!-- <div class="container">
+          <div class="row row-cols-3">
+            <div class="grayscale">
+              <img src="images/feature-bike.jpg" alt="">
+            </div>
+            <div class="non-grayscale">
+              <img src="images/feature-bike.jpg" alt="">
+            </div>
+            <div class="grayscale">
+              <img src="images/feature-bike.jpg" alt="">
+            </div>
+          </div>
+        </div>
+      </div> -->
+
+            </section>
               <!--------------------------- 
-                  happy clients section
+                 Latest News section
                  ------------------------------->
-                 <div class="container">
-                     <div class="row row-cols-1 row-cols-md-3 g-4">
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="images/bike-1.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                 <section class="container my-5 bg-light">
+                  <div class="row">
+                    <div class="col-sm-4">
+                      <div class="card" style="width: 20rem;">
+                      <img src="images/bike-1.png" class="card-img-top p-3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Ducati XDIAVEL S-73</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="images/bike-2.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                        </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Last updated 3 mins ago</small>
-                        </div>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="card" style="width: 20rem;">
+                      <img src="images/bike-2.png" class="card-img-top p-3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">Motorcycles & Scooters </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
                       </div>
                     </div>
-                    <div class="col">
-                      <div class="card h-100">
-                        <img src="images/bike-3.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                          <h5 class="card-title">Card title</h5>
-                          <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
+                  </div>
+                    <div class="col-sm-4">
+                      <div class="card" style="width: 20rem;">
+                      <img src="images/bike-3.png" class="card-img-top p-3" alt="...">
+                      <div class="card-body">
+                        <h5 class="card-title">2021 Honda CBR500R
+                        </h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                      </div>
+                    </div>
+                  </div>
+                  </div>
+                
+   </section>
+                 
+                <!-- clients sections -->
+
+                <section class="container">
+                  <h1 class="text-center my-5">
+                    Happy
+                    <span style="color: rgba(231, 111, 81, 1);">
+                      Clients says
+
+                    </span>
+
+                  </h1>
+                  <div class="row g-4 mb-5 ">
+                    <div class="col-12 col-lg-4"> 
+                      <div class="card p-5">
+                        <img src="images/user-1.png" class="img-fluid mx-auto mb-3" width="80%" alt="">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <article style="color: rgba(108, 108, 108, 1);" class="card-text">
+                            Slate helps you see how
+                            many more days you need 
+                            to work to reach your financial 
+                            goal for the month and year.
+
+                          </article>
+                          <div class="my-3" style="color: rgba(231, 124, 64, 1);">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                          </div>
+                          <h6 class="mb-3" style="color:rgba(35, 166, 240, 1)">
+                            Regina Miles
+                          </h6>
+                          <h6 style="font-weight: bold;">
+                            Banker
+                          </h6>
+
                         </div>
-                        <div class="card-footer">
-                          <small class="text-muted">Last updated 3 mins ago</small>
+                        
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4"> 
+                      <div class="card p-5">
+                        <img src="images/user-2.png" class="img-fluid mx-auto mb-3" width="80%" alt="">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <article style="color: rgba(108, 108, 108, 1);" class="card-text">
+                            Slate helps you see how
+                            many more days you need 
+                            to work to reach your financial 
+                            goal for the month and year.
+
+                          </article>
+                          <div class="my-3" style="color: rgba(231, 124, 64, 1);">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                          </div>
+                          <h6 class="mb-3" style="color:rgba(35, 166, 240, 1)">
+                            Regina Miles
+                          </h6>
+                          <h6 style="font-weight: bold;">
+                            Banker
+                          </h6>
+
+                        </div>
+                        
+                      </div>
+
+                    </div>
+                    <div class="col-12 col-lg-4"> 
+                      <div class="card p-5">
+                        <img src="images/user-2.png" class="img-fluid mx-auto mb-3 rounded-circle" width="80%" alt="">
+                        <div class="card-body d-flex flex-column align-items-center justify-content-center">
+                          <article style="color: rgba(108, 108, 108, 1);" class="card-text">
+                            Slate helps you see how
+                            many more days you need 
+                            to work to reach your financial 
+                            goal for the month and year.
+
+                          </article>
+                          <div class="my-3" style="color: rgba(231, 124, 64, 1);">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+
+                          </div>
+                          <h6 class="mb-3" style="color:rgba(35, 166, 240, 1)">
+                            Regina Miles
+                          </h6>
+                          <h6 style="font-weight: bold;">
+                            Banker
+                          </h6>
+
+                        </div>
+                        
+                      </div>
+
+                    </div>
+
+                  </div>
+                </div> -->
+                </section>
+
+                <!------------------- 
+                  FAQ section
+                 ------------------------->
+
+                <section class="container">
+                    <h1 class="text-center mb-5">
+                      Frequently Asked
+                      <span style="color: rgba(231, 111, 81, 1);">
+                        Questions
+                      </span>
+
+                    </h1>
+                    <div class="row my-5">
+                      <div class="col-lg-6 col-12">
+                        <img src="images/faq.png" alt="" class="img-fluid" width="80%">
+
+                      </div>
+              
+                      <div class="col-lg-6 col-12">
+                        
+                            <div class="accordion" id="accordionExample">
+                              <div class="accordion-item my-4">
+                                <h2 class="accordion-header" id="headingOne">
+                                  <button class="accordion-button" style="color:black;line-height: 1.6; font-weight:500 ;" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                    What are the most important things I should
+                                    <br>
+  
+                                    know about riding a bike?
+                                  </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                  <div class="accordion-body">
+                                 
+                                    Safety First! Always obey the rules of the road. Obey all traffic 
+                                    signals, signs, and laws. Get in the mindset of “driving” your 
+                                    bike—not just “riding” your bike. This will help you be a more 
+                                    focused and legally compliant bike rider.
+                                  </div>
+                                </div>
+                              </div>
+                              <br>
+                          
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                  How can I tell if my helmet is old and I need a 
+
+                                  new one?
+                                </button>
+                              </h2>
+                              <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  Safety First! Always obey the rules of the road. Obey all traffic 
+                                  signals, signs, and laws. Get in the mindset of “driving” your 
+                                  bike—not just “riding” your bike. This will help you be a more 
+                                  focused and legally compliant bike rider.
+                                </div>
+                              </div>
+                            </div>
+                            <br>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  My bike has been in storage is it safe to ride
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  Safety First! Always obey the rules of the road. Obey all traffic 
+                                  signals, signs, and laws. Get in the mindset of “driving” your 
+                                  bike—not just “riding” your bike. This will help you be a more 
+                                  focused and legally compliant bike rider.
+                                </div>
+                              </div>
+                            </div>
+
+                            <br>
+
+                            <div class="accordion-item">
+                              <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                  What rules should I follow when riding my bike?
+                                </button>
+                              </h2>
+                              <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                  Safety First! Always obey the rules of the road. Obey all traffic 
+                                  signals, signs, and laws. Get in the mindset of “driving” your 
+                                  bike—not just “riding” your bike. This will help you be a more 
+                                  focused and legally compliant bike rider.
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        
+                      </div>
+
+                    </div>
+                   
+                </section>
+                <!-- review section -->
+                
+              <section class="container bg-secondary bg-gradient my-5">
+                <h2>This is Review section </h2>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Review
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+                        <div class="row">
+                          <h1> Write Your valuable review.</h1> 
+                          <div class="bg-light border border-2">
+                            <form action="">
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">User Name</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="user name">
+                              </div>
+                              <div class="mb-3">
+                                <label for="exampleFormControlInput1" class="form-label">Email address</label>
+                                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Enter your email address">
+                              </div>
+                             <p>special instruction/comments
+                                  <br>
+                              <textarea name="instruction" id="" cols="30" rows="10"></textarea>
+                              </p>
+                              
+                              <button type="submit" class="btn-primary">submit</button>
+                              
+                          </form>
+                          </div>
+
+                        </div>
+                        <div>
+                          
                         </div>
                       </div>
                     </div>
                   </div>
-                 </div>
-                </section>
-                <!-- cccccccccccccc -->
-
-                <div class="container">
-                    <h1>happy clients</h1>
-                    <div class="row row-cols-1 row-cols-md-3 g-4">
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="images/user-1.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="images/user-2.png" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This card has supporting text below as a natural lead-in to additional content.</p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                          </div>
-                        </div>
-                        <div class="col">
-                          <div class="card h-100">
-                            <img src="images/user-3.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                              <h5 class="card-title">Card title</h5>
-                              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This card has even longer content than the first to show that equal height action.</p>
-                            </div>
-                            <div class="card-footer">
-                              <small class="text-muted">Last updated 3 mins ago</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-
                 </div>
-                <section>
-                    <h1>Frequently Asked <span class="color">Questions</span></h1>
-                    <div>
-                        <img src="images/faq.png" alt="">
-                    </div>
-                    <p>
-                        <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">Toggle first element</a>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">Toggle second element</button>
-                        <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target=".multi-collapse" aria-expanded="false" aria-controls="multiCollapseExample1 multiCollapseExample2">Toggle both elements</button>
-                      </p>
-                      <div class="row">
-                        <div class="col">
-                          <div class="collapse multi-collapse" id="multiCollapseExample1">
-                            <div class="card card-body">
-                              Some placeholder content for the first collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                            </div>
+              </section>
+              <br>
+              <!-------------------------------
+                 extra section-2
+                ---------------------------- -->
+              <section class="container bg-secondary bg-gradient">
+                <h2>This is Honda CBR150R Highlights section </h2>
+                <div class="accordion" id="accordionPanelsStayOpenExample">
+                  <div class="accordion-item">
+                    <h2 class="accordion-header" id="panelsStayOpen-headingOne">
+                      <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseOne" aria-expanded="true" aria-controls="panelsStayOpen-collapseOne">
+                        Honda CBR150R Highlights
+                      </button>
+                    </h2>
+                    <div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse show" aria-labelledby="panelsStayOpen-headingOne">
+                      <div class="accordion-body">
+                        <div class="row">
+                          <h3>Showoff Honda CBR150R Highlights</h3> 
+                          <div class="bg-light border border-2">
+                            <p>
+                              The <strong>2021 Honda CBR150R</strong> has been launched in Indonesia. The updated model comes with a much more aggressive bodywork similar to the Honda CBR250RR. It also gets a more premium Showa SFF-BP inverted front fork and a rear monoshock. Interestingly, apart from providing a more sophisticated damping, the front fork isn’t preload-adjustable like the
+                            </p>
+                            
                           </div>
+
                         </div>
-                        <div class="col">
-                          <div class="collapse multi-collapse" id="multiCollapseExample2">
-                            <div class="card card-body">
-                              Some placeholder content for the second collapse component of this multi-collapse example. This panel is hidden by default but revealed when the user activates the relevant trigger.
-                            </div>
-                          </div>
+                        <div>
+                          
                         </div>
                       </div>
-                </section>
+                    </div>
+                  </div>
+                </div>
+              </section>
+          
          </main>
+         <br>
 
          <!--------------------
              footer section 
              ------------------------->
-             <footer>
-                 <h1>this is footer</h1>
-             </footer>
+             <section class="container footer bg-dark text-white">
+             <div class="row text-center p-5">
+               <p>©2021 Bike. All rights reserved</p>
+              </div>
+             </section>
     <!-------------------------- 
         bootstrap js link
      ------------------------------>

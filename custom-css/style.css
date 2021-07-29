@@ -1,3 +1,7 @@
+a{
+    text-decoration: none;
+  }
+  
 .btn{
     background-color: #E76F51;
 }
@@ -5,17 +9,42 @@
     background-color: #0a2935;
     color: white;
     width: 100%;
-}
-
-.col img{
-  
-    width: 400px;
-    height:300px;
-    border: 2px solid #000000;
-    box-sizing: border-box;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-}
-.col-1 img{
+}  
+.feature-bike1 {
     filter: grayscale(100%);
 }
+.img-fluid {
+    max-width: 100%;
+    height: auto;
+}
+.card-text{
+    color: #6C6C6C;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px; 
+
+}
+.name{
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.2px;
+color: #23A6F0;
+}
+.designation{
+    font-weight: 600;
+font-size: 14px;
+line-height: 24px;
+/* identical to box height, or 171% */
+
+letter-spacing: 0.2px;
+
+/* text-color */
+
+color: #252B42;
+}
+
+
 
